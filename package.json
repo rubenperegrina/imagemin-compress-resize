@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "images": "npm run images:resize && npm run images:compress",
+    "images:resize": "node scripts/resize.mjs",
+    "images:compress": "node scripts/compress.mjs"
   },
   "private": true,
   "dependencies": {
